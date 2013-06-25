@@ -21,11 +21,14 @@ Debmirror basically one big perl script with a few dependencies.
 Recipes
 =======
 
-utexas-precise-amd64
-
+## Default
 creates an amd64 precise mirror in /share/ubuntu-amd64 8)
 
-Attributes
+Attributes (Recipe)
+==========
+* `node['debmirror]['hostname']` - the FQDN you're serving under
+
+Attributes (Resource)
 ==========
 
 attribute :target_dir, :name_attribute => true

@@ -7,6 +7,7 @@
   # universe is 29G in precise!
   'target_dir' => '/share/ubuntu',
   'source' => nil
+  'hostname' => 'ftp.myhost.domain'
 }.each do |k,v| 
   default['debmirror'][k]=v
 end
